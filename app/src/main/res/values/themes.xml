@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RyhtmicApp" parent="Theme.AppCompat.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- Customize your theme here. -->
+
+    </style>
+    <style name="changeshape" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#FFFFFF</item>
+        <item name="android:progressTint">#FFFFFF</item>
+        <item name="android:thumbTint">#FFFFFF</item>
+    </style>
+    <style name="MyButton" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#FFFFFF</item>
+        <item name="android:progressTint">#FFFFFF</item>
+        <item name="android:thumbTint">#FFFFFF</item>
+    </style>
+    <style name="myedittext">
+        <item name="android:colorControlNormal">#FFFFFF</item>
+        <item name="android:colorControlActivated">#06187A</item>
+        <item name="android:colorControlHighlight">#ffffff</item>
+        <item name="android:colorAccent">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+    </style>
+</resources>

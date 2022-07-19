@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "851965402793",
+    "firebase_url": "https://ryhtmic-app-default-rtdb.firebaseio.com",
+    "project_id": "ryhtmic-app",
+    "storage_bucket": "ryhtmic-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851965402793:android:df836db305a1b4ebb193b8",
+        "android_client_info": {
+          "package_name": "com.example.ryhtmicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851965402793-17mkv30bpimrit4l4k96c9g36bt7d9jj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ryhtmicapp",
+            "certificate_hash": "f0a45e038cb1fcc35749682b4dbecf33ddf68ac1"
+          }
+        },
+        {
+          "client_id": "851965402793-tv970e0q2ai2lhok1k44upd3l9gd1u1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvoR3jf_5lDV7Q5rvhd_AYJV3RB2OdrXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851965402793-tv970e0q2ai2lhok1k44upd3l9gd1u1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

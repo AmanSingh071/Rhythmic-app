@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".loginActivity"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+
+
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/shufflebtnfrontpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:background="@color/white"
+                android:backgroundTint="#092241"
+                android:contentDescription="@string/app_name"
+                android:drawableTop="@drawable/ic_baseline_shuffle_24"
+                android:layout_marginTop="590dp"
+
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_shuffle_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="10dp"
+                android:text="Shuffle"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="640dp"
+
+
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:background="@color/white"
+                android:backgroundTint="#092241"
+                android:contentDescription="@string/app_name"
+                android:minWidth="48dp"
+                android:layout_marginTop="590dp"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+
+                app:layout_constraintStart_toEndOf="@+id/shufflebtnfrontpage"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favourite"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="95dp"
+                android:layout_marginBottom="10dp"
+
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="640dp"
+
+
+                app:layout_constraintStart_toEndOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playlists"
+                android:layout_marginLeft="50dp"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="640dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+            <ImageButton
+                android:id="@+id/playlist"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="23dp"
+                android:background="@color/white"
+                android:backgroundTint="#092241"
+                android:contentDescription="@string/app_name"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_baseline_library_music_24"
+                android:layout_marginTop="590dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/totalsongs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="All Songs"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewid"
+                android:layout_width="343dp"
+                android:layout_height="443dp"
+                android:layout_marginTop="94dp"
+
+
+                android:layout_marginBottom="60dp"
+                android:backgroundTint="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/shufflebtnfrontpage"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalsongs" />
+
+            <ImageButton
+                android:id="@+id/opentab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:backgroundTint="#092241"
+                android:contentDescription="@string/action_sign_in"
+
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_marginTop="490dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white">
+
+            </ImageButton>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navbar"
+        android:layout_gravity="start"
+        app:itemIconTint="@color/blue"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/activity_nav_header"
+        app:menu="@menu/nav_menu2"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+z
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

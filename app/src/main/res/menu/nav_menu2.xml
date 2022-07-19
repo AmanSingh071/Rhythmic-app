@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_baseline_feedback_24"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/about"
+
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:title="About" />
+    <item
+        android:id="@+id/upload"
+
+        android:icon="@drawable/ic_baseline_file_upload_24"
+
+        android:title="Upload Music" />
+    <item
+        android:id="@+id/exit"
+
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+
+        android:title="Exit" />
+
+</menu>
