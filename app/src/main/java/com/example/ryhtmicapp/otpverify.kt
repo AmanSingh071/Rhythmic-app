@@ -38,6 +38,7 @@ class otpverify : AppCompatActivity() {
           var otp2:String= "+91$otp"
           startphonenumberverfication(otp2)
           Toast.makeText(this, "Code Sent", Toast.LENGTH_SHORT).show()
+          Toast.makeText(this, "please wait for 20 sec ", Toast.LENGTH_SHORT).show()
       }
         binding.vfotp.setOnClickListener {
             binding.probar.visibility=View.VISIBLE

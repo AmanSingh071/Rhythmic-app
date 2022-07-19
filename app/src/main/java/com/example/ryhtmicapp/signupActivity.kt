@@ -73,6 +73,12 @@ class signupActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT).show()
             return
         }
+        if(password.length<6 && confirmpassword.length<6)
+        {
+            Toast.makeText(baseContext, "enter at leat 6 digit password",
+                Toast.LENGTH_SHORT).show()
+            return
+        }
 
         auth.createUserWithEmailAndPassword(email, password)
         .addOnCompleteListener(this) {
@@ -87,7 +93,7 @@ class signupActivity : AppCompatActivity() {
         } else {
             // If sign in fails, display a message to the user.
 
-            Toast.makeText(this, "Enter 6 digit Password", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "authentication failed ,this user might already exists", Toast.LENGTH_SHORT).show()
 
         }
     }
