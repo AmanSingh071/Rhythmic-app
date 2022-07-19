@@ -427,9 +427,10 @@ class upload_activity : AppCompatActivity() {
             return true;
         }
         if (item.itemId ==R.id.nav_upload) {
-            Toast.makeText(this,"upload",Toast.LENGTH_SHORT).show()
+
             if(validatePermission())
             {
+                Toast.makeText(this,"pick image for Song",Toast.LENGTH_SHORT).show()
            pickimgaefromstorage()
 
             }
@@ -462,7 +463,7 @@ class upload_activity : AppCompatActivity() {
         return checkPermission
     }
     private fun picksongfromstorage() {
-
+        Toast.makeText(this,"pick Song to Upload",Toast.LENGTH_SHORT).show()
         uploadIntent.type="audio/*"
         uploadIntent.action=Intent.ACTION_GET_CONTENT
 
